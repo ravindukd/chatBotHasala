@@ -3,6 +3,8 @@ const dialogflow = require('dialogflow');
 const uuid = require('uuid');
 
 exports.chatbotChat = functions.https.onRequest(async(request, response) => {
+    res.set('Access-Control-Allow-Origin', "*")
+    res.set('Access-Control-Allow-Methods', 'GET, POST')
     let res = await runSample(request.body.message || request.query.message); //new
     response.send(res);
 });

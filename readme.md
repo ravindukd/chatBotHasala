@@ -45,3 +45,13 @@
 2. **`firebase -> develop -> functions`**
 3. Link to chatbotChat function 
 	**GET REQUEST ON BROWSER** ( [https://us-central1-v2-jblahq.cloudfunctions.net/chatbotChat?message=<MESSAGE_TO_AGENT>](https://us-central1-v2-jblahq.cloudfunctions.net/chatbotChat?message=<MESSAGE_TO_AGENT> "Change MESSAGE TO AGENT and send") )
+
+# IMPORTANT
+```javascript
+exports.chatbotChat = functions.https.onRequest(async(request, response) => {
+    res.set('Access-Control-Allow-Origin', "*") // These two lines must be added
+    res.set('Access-Control-Allow-Methods', 'GET, POST') //foget to edit the code
+    let res = await runSample(request.body.message || request.query.message);
+    response.send(res);
+});
+```
