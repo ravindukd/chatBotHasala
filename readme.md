@@ -11,14 +11,15 @@
 
 ## then installed dependencies
 *on terminal*
-1. **cd ./functions`**
+1. **`cd ./functions`**
 2.  **`npm install`**
 
 ## then on functions/index.js
 1.  uncommented **`expor...functions.https..`**
 2.  changed function name from **`helloWorld`** to **`chatBotChat`**
 
-[Copied this code from Official Google Dialogflow NodeJS Client Github Repo :)](https://github.com/googleapis/nodejs-dialogflow "Github Repo")
+## AND  
+[Copied this code from Official Google Dialogflow NodeJS Client Github Repo https://github.com/googleapis/nodejs-dialogflow :)](https://github.com/googleapis/nodejs-dialogflow "Github Repo")
 
 *on terminal*
 1.  **`npm install dialogflow`**
@@ -39,7 +40,7 @@
 1.  **`firebase deploy`**
 
 
-*|on firebase console|* -> [console.firebase.com](console.firebase.com "Firebase Console")
+*on firebase console* -> [console.firebase.com](console.firebase.com "Firebase Console")
 1.  **`v2-jblahq`**
 2. **`firebase -> develop -> functions`**
 3. Link to chatbotChat function 
